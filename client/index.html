@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>chatApp</title>
+  </head>
+  <body>
+    <form id="form" class="form-container">
+      <div class="username-input-conatianer">
+        <h1 class="">Join Chat</h1>
+        <label for="username-input">useranme : </label>
+        <input
+        type="text"
+        name="username-input"
+        id="username-input"
+        placeholder="Enter you Username"
+        class=""
+        required
+      />
+      <div>
+        <button id="join-chat" type="submit">Join Chat</button>
+      </div>
+      </div>
+    </form>
+    <div class="chatroom-container">
+      <div class="chatroom-header">Welcome to the chat App</div>
+      <div id="message-container">
+        <div class="message-input-container">
+          <input type="text" placeholder="enter message" id="message-input" class="message-input"/>
+          <button class="material-symbols-outlined" id="send-button">send</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+      integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
